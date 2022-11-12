@@ -9,6 +9,7 @@ font-family: 'Poppins', sans-serif;
   --box-shadow: 0.3rem 0.3rem 1.5rem rgb(0, 0, 0, 0.15);
 }
 
+
 /* Reset */
 *,
 *::before,
@@ -19,6 +20,7 @@ font-family: 'Poppins', sans-serif;
 html {
   font-size: 62.5%;
   line-height: 1.5;
+  font-family: sans-serif;
 }
 
 h1,
@@ -42,3 +44,231 @@ ol[class] {
   margin-top: var(--flow-spacer, var(--spacer));
 }
 /* Start Here */
+
+body {
+  width: 1080px;
+  margin: auto;
+  position: relative;
+  font-size: 1.8rem;
+  font-family: 'Lora', serif;  
+}
+
+.navigation p {
+  padding: 2rem 0rem;
+  font-size: 2.6rem; 
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold;
+  color: #3D2892;
+}
+
+.navigation span, .hero h1, .footer h1, .stories a, .authors h3, .stories_senyalesDiv a {
+  color: #F55D3A;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: inline-flex;
+  float: right;
+  color: #3D2892 ;
+  margin: 0rem;
+  padding: 0rem;
+  font-weight: bold;
+  
+}
+
+.navigation ul li {
+ padding: 0rem 1rem;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  font-weight: bolder;
+ }
+
+.hero div {
+  display: flex;
+  width: 100%;
+  height: 60rem;
+  justify-content: left;  
+  position: relative;
+  flex-direction: column;
+ 
+}
+
+.hero_image{
+  padding: 2rem;  
+  float: right;
+}
+
+
+ .hero h1,.hero h2,.hero button {  
+  position: relative;  
+  bottom: 300px;
+ }
+
+ .hero h1, .footer h1{
+  font-size: 6.4rem;  
+}
+
+.hero h2 {
+  font-size: 3.2rem;
+  font-family: 'Lora', serif;
+  font-weight: thin;
+}
+
+.hero button, #footer_submit{
+  color: azure;
+  background-color: #3D2892;
+}
+
+.hero button {
+  padding: 1rem 2rem;
+  width: 10%;
+  box-shadow: 0px 0px 40px 5px #3D2892;
+  font-weight: bold;
+  
+}
+
+.stories {
+  height: 100rem;  
+}
+
+.stories_title, .authors_title, .stories h3{
+  color: #3D2892;
+  font-family: 'Poppins', sans-serif;;
+}
+
+
+.stories_title, .authors_title {
+  font-size: 3.2rem;
+  text-align: center; 
+  margin-bottom: 10rem;
+}
+
+.stories div, .authors div {
+  width: 90%;
+  margin: auto;
+ 
+}
+
+.stories h3,.authors h3 {
+  font-size: 2.8rem;
+}
+
+.stories p, .authors p, .footer p {
+  font-size: 1.8rem;
+}
+
+.stories_paramdamDiv h3, .stories_paramdamDiv p, .stories_paramdamDiv a{  
+  width: 50%;
+  float: left;
+  display: flex;
+  margin-left: 15rem;
+}
+
+.stories a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.stories_paramdamDiv figure {
+  float: left;
+  position: relative;
+}
+
+.stories_senyalesDiv h3, .stories_senyalesDiv p,  .stories_senyalesDiv a{
+  width: 50%;
+  float: left;
+  display: flex;
+  position: relative;
+  
+}
+
+.stories_senyalesDiv figure {
+  float: right;
+  
+}
+
+.stories_paramdamDiv, .stories_senyalesDiv  {
+  height: 40rem;
+}
+
+.stories_paramdamDiv--redshadow, .stories_senyalesDiv--blueshadow {
+  z-index: 1;
+  height: 30rem; 
+  max-width: 16rem;   
+  position: absolute;
+}
+.paramdamDiv_image1, .senyalesDiv_image2 {
+  z-index: 10;
+  position: relative;
+}
+
+.stories_paramdamDiv--redshadow {
+  background-color: #F55D3A;
+  transform: translate(-10px, -10px);
+}
+
+.stories_senyalesDiv--blueshadow {
+  background-color: #16E0E0;
+  right: 10rem;
+  transform: translate(10px, -10px);
+}
+
+.authors div {
+  display: flex;
+  text-align: center;
+}
+
+.authors_cris , .authors_katie , .authors_scarllette {
+margin: 0rem;
+padding: 0rem;
+
+}
+
+.authors_cris p, .authors_katie p, .authors_scarllette p{
+  padding: 3rem;
+}
+
+
+.footer {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer img{
+  max-width: 100%;
+  position: relative;
+} 
+
+ .footer h1, .footer input, .footer p {
+ position: absolute;
+}
+
+.footer h1 {
+  top: 15rem;
+  left: 10rem
+}
+
+#footer_email {
+  padding: 1rem 3rem;
+  margin: 2rem;
+  top: 16.5rem;
+  right: 18rem;
+}
+
+#footer_submit {
+  padding: 1rem 2rem;
+  right: 8rem;
+  top: 18.5rem;
+  
+}
+
+.footer p {
+  color: white; 
+  top: 25rem;
+  left: 30rem; 
+}
